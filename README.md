@@ -17,11 +17,15 @@ If you are running on macos  run the following command:
 
 Next we can install the tool [pyprof2calltree](https://github.com/pwaller/pyprof2calltree/) which allows for the interpretation of the files
 Installation can be done through pip install:
-``pip install pyprof2calltree```
+```pip install pyprof2calltree```
 
 ## Running the program ##
 profile_tester.py is the main entry.
 The reason there is no main function is that cProfile can not be wrapped in a function. If you do that it will be unable
 to resolve imported functions. So if you want to adapt your own code make sure you do not create the main function and wrap
 cProfile in a callable function
+
+## Visualising the result ##
+Once the code has been run you will have 2 files: first_iteration.cprof and second_iteration.cprof
+To visualize the data run the following command
 
