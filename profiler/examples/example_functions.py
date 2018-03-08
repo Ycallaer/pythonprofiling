@@ -16,6 +16,7 @@ def increase_by_1_loop(dummy_list):
 
     return secondlist
 
+
 def increase_by_1_list_comp(dummy_list):
     """
     Increase the value by 1 using list comprehension
