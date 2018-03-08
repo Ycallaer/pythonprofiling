@@ -4,6 +4,8 @@
 We will give an example on how you can do profiling on python code using the built-in cProfile package.
 Visualisation of the result will be done using the package pyprof2calltree, which runs on qcachegrind.
 
+The code is written for python 3.6, it should be compatible with 2.7 but this has not been tested.
+
 ## Explanation on the setup ##
 We will increase all values in a list. We will do this by using 2 methods. First we will just loop over all values and increase by 1.
 The second time we will use a list comprehension.
