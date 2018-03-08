@@ -13,7 +13,9 @@ The goal is to show the difference in processing time and functions called
 ## Prerequisite ##
 Before you can start coding you will need to install [qcachegrind](http://kcachegrind.sourceforge.net) with the graphical interface
 If you are running on macos  run the following command:
-```brew install qcachegrind --with-graphviz``
+
+```brew install qcachegrind --with-graphviz```
+
 
 Next we can install the tool [pyprof2calltree](https://github.com/pwaller/pyprof2calltree/) which allows for the interpretation of the files
 Installation can be done through pip install:
@@ -27,5 +29,8 @@ cProfile in a callable function
 
 ## Visualising the result ##
 Once the code has been run you will have 2 files: first_iteration.cprof and second_iteration.cprof
-To visualize the data run the following command
+To visualize the data run the following command:
+
+```pyprof2calltree -k -i /profiler/second_iteration.cprof```
+
 
